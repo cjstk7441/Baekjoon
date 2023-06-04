@@ -1,3 +1,4 @@
+/* 조회수가 가장 높은 중고거래 게시물에 대한 첨부파일 경로를 조회해라 */
 SELECT CONCAT('/home/grep/src/',BOARD_ID,'/',FILE_ID,FILE_NAME,FILE_EXT) AS FILE_PATH
 FROM USED_GOODS_BOARD AS B JOIN USED_GOODS_FILE AS F
 USING (BOARD_ID)
